@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <h1 id="title" style="text-align: center;font-size: 50px;"><pre style="font-family: 'Times New Roman', Times, serif;">Online Bank of Bharath<img src="bank.png" alt="Bank logo" style="width:50px;height:45px;"/></pre><h1>
+    <p id="description" style="text-align: center;font-size: 30px;"><i>$...Digital Money...$</i></p>
+    <form id="survey-form">
+      <div class="hvr">
+        <label>Personal Details</label>
+        <div>
+          <label for="name" id="name-label">Name<sup>*</sup></label>
+          <input type="text" name="name" id="name" placeholder="Enter Name" required/>
+          <label for="email" id="email-label">E-mail<sup>*</sup></label>
+          <input type="email" name="email" id="email" minlegth="8"  placeholder="Enter E-mail"required/>
+          <label for="number" id="number-label">Mobile Number<sup>*</sup></label>
+          <input type="number" name="number" id="number" min="1" max="100000"  placeholder="Enter Number"/>
+        </div>
+      </div>
+      <div class="hvr">
+        <label>Choose Bank</label>
+        <div>
+            <label for="sbi"><input type="radio" name="sbi" id="sbi" value="1" />State Bank of India</label>
+            <label for="unb"><input type="radio" name="sbi" id="unb" value="2"/>Union Bank</label>
+            <label for="hdfc"><input type="radio" name="sbi" id="hdfc" value="3" />HDFC Bank</label>
+            <label for="axb"><input type="radio" name="sbi" id="axb" value="4"/>Axis Bank</label>
+        </div>
+      </div>
+      <div class="hvr">
+          <label>Select the Service needed</label>
+          <div>
+          <label for="mob-num"><input type="checkbox" name="mob-num" id="mob-num" value="0"/>Mobile Number Change</label>
+          <label for="atm"><input type="checkbox" name="atm" id="atm" value="1"/>Apply for ATM </label>
+          <label for="credit"><input type="checkbox" name="credit" id="credit" value="2"/>Apply for Credit Card</label>
+          <label for="aadhaar"><input type="checkbox" name="aadhaar" id="aadhaar" value="3"/>Add Aadhaar Number</label>
+          <label for="pan"><input type="checkbox" name="pan" id="pan" value="4"/>Add PAN to Account</label>
+          </div>
+      </div>
+      <div class="hvr">
+        <label for="dropdown">Select UPI for Transactions</label>
+        <div>
+            <select id="dropdown" >
+              <option value="0" >UPI</option>
+              <option value="1" >PhonePe</option>
+              <option value="2" >Gpay</option>
+              <option value="3">Paytm</option>
+              <option value="4">Amazon Pay</option>
+              <optin value="5">BharatPe</option>
+            </select>
+        </div>
+      </div>
+      <div class="hvr">
+        <label for="queries" style="font-size:20px;">If you have any queries ask here...</label>
+        <div>
+            <textarea id="queries" rows="5" cols="50" placeholder="Enter Queries about anything....."></textarea>
+        </div>
+    </div>
+      <div class="hvr">
+        <input type="submit" name="submit" id="submit" value="Submit"/>
+      </div>
+    </form>
+  </body>
+</html>
